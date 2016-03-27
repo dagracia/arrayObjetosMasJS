@@ -63,8 +63,15 @@ alert('Wow! has visto ' + tiempoPantalla +" veces minimo la pantalla");
 
 */
 
-console.log("Inicio del programa");
+/*console.log("Inicio del programa");
 //var numeroingresado = prompt("ingrese un numero: ");
-var dado = Math.floor(Math.random()*6)+1;
+var dado = Math.floor(Math.random() * 6) + 1;
 alert("Dado dice: "+dado);
+console.log("Programa completado");
+*/
+
+console.log("Inicio del programa");
+var numeroIngresado = prompt("ingrese un numero: ");
+var numeroAleatoreo = Math.floor(Math.random() * numeroIngresado) + 1;
+alert("El numero aleatorio entre 1 y " + numeroIngresado + " es: " + numeroAleatoreo);
 console.log("Programa completado");
