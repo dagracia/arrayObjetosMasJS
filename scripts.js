@@ -1,13 +1,44 @@
-function tirarDado(){
+/******************************
+funcion mayor de dos numero
+******************************/
+function mayorEntreDosNumeros(nUno, nDos){
+	if(nUno > nDos){
+		return nUno;
+	}else{
+		return nDos;
+	}
+}
+
+var numUno = parseInt(prompt("ingrese un numero"));
+var numDos = parseInt(prompt("ingrese otro numero"));
+
+alert("el numero mayor es el "+mayorEntreDosNumeros(numUno, numDos));
+
+/**************************
+funcion que recibe parametros
+**************************/
+/*function numeroAlAzarHastaLimite(limite){
+	var num= Math.floor(Math.random() * parseInt(limite)) + 1;
+	return num;
+}
+
+var numAzar = numeroAlAzarHastaLimite(prompt("ingrese un numero"));
+
+alert("el numero al azar de respuesta es "+numAzar);
+
+/*function tirarDado(){//funcion de tirar dados
 var dado = Math.floor(Math.random() * 6) + 1;
-alert(dado);
+return dado;
 };
 
 console.log("Inicio del programa");
-alert("tirar dador 3 veces");
-tirarDado();
-tirarDado();
-tirarDado();
+//alert("tirar dador 3 veces");
+
+alert("el dado dice: "+tirarDado());
+
+var multiplo = tirarDado() * 2
+
+alert("multiplico por 2 el dado: "+multiplo);
 
 /*console.log("pon el punto y coma")
 alert("le falta el parentesis";
