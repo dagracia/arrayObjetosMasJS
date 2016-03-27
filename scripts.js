@@ -1,7 +1,59 @@
+/****************************
+numero al azar entre dos numeros
+******************************/
+function numeroAlAzarHastaLimite(limiteInferior, limiteSuperior){
+var ejecutar = true;
+	if(isNaN(limiteInferior)){
+		throw new Error ("el limite inferior no es un numero valido");
+		ejecutar = false;
+		}
+
+	if(isNaN(limiteSuperior)){
+		throw new Error ("el limite superior no es un numero valido");
+		ejecutar = false;
+		}
+
+	var diferenciaEntreNumero = parseInt(limiteSuperior)-parseInt(limiteInferior)
+		
+	var num;
+	if(ejecutar){
+		num= Math.floor(Math.random() * diferenciaEntreNumero)+1 +parseInt(limiteSuperior) -diferenciaEntreNumero  ;
+		}
+	
+	return num;
+}
+
+var numAzar = numeroAlAzarHastaLimite(prompt("ingrese limite inferior"), prompt("ingrese limite superior"));
+
+alert("el numero al azar de respuesta es "+numAzar);
+
+/******************************
+throw new error
+******************************/
+/*var num="numero";
+if(isNaN(num)){
+	throw new Error ("no es un numero valido");
+}else{
+	num = num * 0.5;
+}
+
+console.log(num);*/
+/*******************************
+Ambito de las variables
+**********************************/
+/*function saludo(){
+	var mensaje ="Hola a todos";
+	alert(mensaje);
+}
+var mensaje = "Chao";
+saludo();
+alert(mensaje);
+saludo();
+*/
 /******************************
 funcion mayor de dos numero
 ******************************/
-function mayorEntreDosNumeros(nUno, nDos){
+/*function mayorEntreDosNumeros(nUno, nDos){
 	if(nUno > nDos){
 		return nUno;
 	}else{
@@ -13,7 +65,7 @@ var numUno = parseInt(prompt("ingrese un numero"));
 var numDos = parseInt(prompt("ingrese otro numero"));
 
 alert("el numero mayor es el "+mayorEntreDosNumeros(numUno, numDos));
-
+*/
 /**************************
 funcion que recibe parametros
 **************************/
