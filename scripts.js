@@ -21,15 +21,23 @@ console.log("Su nombre es "+equipo);*/
 console.log("La longitud de la clave es: " + clave.length);
 console.log("TA-DA!! Su clave es: " + clave.toUpperCase());
 console.log("El valor original de la clave es: " + clave);*/
-/*var nombre = prompt("ingrese un nombre:");
-var verbo = prompt("ingrese un verbo:");
-var adjetivo = prompt("ingrese un adjetivo:");
-document.write("<h1>Mi papá tiene un " +nombre+ " muy "+adjetivo+" y a veces nos lleva a "+verbo+" a mis amigos y a mí</h1>");
+/*console.log("Inicio del programa");
+var preguntas = 3;
+var preguntasFaltantes = "Quedan " + preguntas + " preguntas.";
+alert("Este es el juego del cuenta cuentos. Sigue las instrucciones.");
+var nombre = prompt("ingrese un nombre. "+ preguntasFaltantes);
+preguntas -=1;
+var preguntasFaltantes = "Quedan " + preguntas + " preguntas.";
+var verbo = prompt("ingrese un verbo "+ preguntasFaltantes);
+preguntas -=1;
+var preguntasFaltantes = "Quedan " + preguntas + " preguntas.";
+var adjetivo = prompt("ingrese un adjetivo " + preguntasFaltantes);
+/*document.write("<h1>Mi papá tiene un " +nombre+ " muy "+adjetivo+" y a veces nos lleva a "+verbo+" a mis amigos y a mí</h1>");*/
 
-document.write("<h1>Un día lunes por la mañana llego " + nombre.toUpperCase() + " a la escuela y le dice a su maestra: <br>Maestra, ¿Me va a " + verbo.toUpperCase() 
-	+ " usted por algo que yo no hice? <br>No " + nombre.toUpperCase() + ", ¡Por supuesto que no!  <br>Que " + adjetivo.toUpperCase() + " porque no hice la tarea</h1>");*/
-
-/*var segundosPorMinuto= 60;
+/*document.write("<h1>Un día lunes por la mañana llego " + nombre.toUpperCase() + " a la escuela y le dice a su maestra: <br>Maestra, ¿Me va a " + verbo.toUpperCase() 
+	+ " usted por algo que yo no hice? <br>No " + nombre.toUpperCase() + ", ¡Por supuesto que no!  <br>Que " + adjetivo.toUpperCase() + " porque no hice la tarea</h1>");
+*/
+var segundosPorMinuto= 60;
 var minutosPorHora = 60;
 var horasPorDia= 24;
 
@@ -48,3 +56,9 @@ var peliculasVistas = prompt("Cuantas peliculas has visto este mes?");
 var seriesVistas = prompt("Cuantas series has visto este mes?");
 var tiempoPantalla = parseInt(peliculasVistas) + parseInt(seriesVistas);
 alert('Wow! has visto ' + tiempoPantalla +" veces minimo la pantalla");
+
+
+
+
+
+
