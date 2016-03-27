@@ -1,3 +1,14 @@
+function tirarDado(){
+var dado = Math.floor(Math.random() * 6) + 1;
+alert(dado);
+};
+
+console.log("Inicio del programa");
+alert("tirar dador 3 veces");
+tirarDado();
+tirarDado();
+tirarDado();
+
 /*console.log("pon el punto y coma")
 alert("le falta el parentesis";
 document.write("<h1>cierra el tag");
@@ -79,8 +90,8 @@ console.log("Programa completado");
 /********************************************
 juego de adivinar el numero alario
 ********************************************/
-console.log("Inicio del programa");
-var numeroIngresado = parseInt(prompt("ingrese un numero: "));
+
+/*var numeroIngresado = parseInt(prompt("ingrese un numero: "));
 var adivino=false;
 var aleatorio = Math.floor(Math.random() * 5) + 1;
 
@@ -105,6 +116,4 @@ if(adivino){// evaluando si gano o perdió
 }else{
 	alert("Ingresaste " + numeroIngresado + ", pero el numero a adivinar era " + aleatorio);
 }
-
-/*	
-	*/
+*/
