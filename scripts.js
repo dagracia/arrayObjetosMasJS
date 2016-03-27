@@ -41,7 +41,7 @@ var adjetivo = prompt("ingrese un adjetivo " + preguntasFaltantes);
 	+ " usted por algo que yo no hice? <br>No " + nombre.toUpperCase() + ", ¡Por supuesto que no!  <br>Que " + adjetivo.toUpperCase() + " porque no hice la tarea</h1>");
 <<<<<<< HEAD
 */
-var segundosPorMinuto= 60;
+/*var segundosPorMinuto= 60;
 var minutosPorHora = 60;
 var horasPorDia= 24;
 
@@ -56,8 +56,15 @@ var aniosDeVida = prompt("ingrese el numero de años que ha vivido:");
 var diasVividos = aniosDeVida * diasPorAño;
 document.write("<h1>Calculadora del Tiempo</h1><p>Ha vivido " + diasVividos + " días aproximadamente</p>");*/
 
-var peliculasVistas = prompt("Cuantas peliculas has visto este mes?");
+/*var peliculasVistas = prompt("Cuantas peliculas has visto este mes?");
 var seriesVistas = prompt("Cuantas series has visto este mes?");
 var tiempoPantalla = parseInt(peliculasVistas) + parseInt(seriesVistas);
 alert('Wow! has visto ' + tiempoPantalla +" veces minimo la pantalla");
 
+*/
+
+console.log("Inicio del programa");
+//var numeroingresado = prompt("ingrese un numero: ");
+var dado = Math.floor(Math.random()*6)+1;
+alert("Dado dice: "+dado);
+console.log("Programa completado");
