@@ -70,8 +70,33 @@ alert("Dado dice: "+dado);
 console.log("Programa completado");
 */
 
-console.log("Inicio del programa");
+/*console.log("Inicio del programa");
 var numeroIngresado = prompt("ingrese un numero: ");
 var numeroAleatoreo = Math.floor(Math.random() * numeroIngresado) + 1;
 alert("El numero aleatorio entre 1 y " + numeroIngresado + " es: " + numeroAleatoreo);
 console.log("Programa completado");
+*/
+
+console.log("Inicio del programa");
+var numeroIngresado = parseInt(prompt("ingrese un numero: "));
+var adivino=false;
+var aleatorio = Math.floor(Math.random() * 5) + 1;
+if (numeroIngresado === aleatorio) {
+	adivino = true;
+}else if(aleatorio > numeroIngresado){
+	var nuevoIntento = parseInt(prompt("El numero a adivinar es mayor, vuelve a intentar" ));
+		if(nuevoIntento == aleatorio){	adivino=true; };	
+		numeroIngresado = nuevoIntento;
+	}else{
+	var nuevoIntento = parseInt(prompt("El numero a adivinar es menor, vuelve a intentar" ));
+		if(nuevoIntento == aleatorio){	adivino=true; };	
+		numeroIngresado = nuevoIntento;
+	};
+if(adivino){
+	alert("felicidades, adivinaste, ingresaste " + numeroIngresado + ", que fue el aleatorio entre 1 y 5");
+}else{
+	alert("Ingresaste " + numeroIngresado + ", pero el numero a adivinar era " + aleatorio);
+}
+
+/*	
+	*/
