@@ -76,23 +76,31 @@ var numeroAleatoreo = Math.floor(Math.random() * numeroIngresado) + 1;
 alert("El numero aleatorio entre 1 y " + numeroIngresado + " es: " + numeroAleatoreo);
 console.log("Programa completado");
 */
-
+/********************************************
+juego de adivinar el numero alario
+********************************************/
 console.log("Inicio del programa");
 var numeroIngresado = parseInt(prompt("ingrese un numero: "));
 var adivino=false;
 var aleatorio = Math.floor(Math.random() * 5) + 1;
-if (numeroIngresado === aleatorio) {
+
+if (numeroIngresado === aleatorio) {//comprobando el primer intento
 	adivino = true;
-}else if(aleatorio > numeroIngresado){
+}else if(aleatorio > numeroIngresado){//comprobando si el numero aleatorio es mayor que el ingresado
+
 	var nuevoIntento = parseInt(prompt("El numero a adivinar es mayor, vuelve a intentar" ));
-		if(nuevoIntento == aleatorio){	adivino=true; };	
+		if(nuevoIntento == aleatorio){	// comprobando el segundo intento
+			adivino=true; };	
 		numeroIngresado = nuevoIntento;
-	}else{
+	}else{// sie el primer intento es menor que el aleatorio
 	var nuevoIntento = parseInt(prompt("El numero a adivinar es menor, vuelve a intentar" ));
-		if(nuevoIntento == aleatorio){	adivino=true; };	
+		if(nuevoIntento == aleatorio){	// comprobando el segundo intento
+			adivino=true; };	
 		numeroIngresado = nuevoIntento;
 	};
-if(adivino){
+
+
+if(adivino){// evaluando si gano o perdió
 	alert("felicidades, adivinaste, ingresaste " + numeroIngresado + ", que fue el aleatorio entre 1 y 5");
 }else{
 	alert("Ingresaste " + numeroIngresado + ", pero el numero a adivinar era " + aleatorio);
