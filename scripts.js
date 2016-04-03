@@ -1,7 +1,9 @@
+
+
 /****************************
 numero al azar entre dos numeros
 ******************************/
-function numeroAlAzarHastaLimite(limiteInferior, limiteSuperior){
+/*function numeroAlAzarHastaLimite(limiteInferior, limiteSuperior){
 var ejecutar = true;
 	if(isNaN(limiteInferior)){
 		throw new Error ("el limite inferior no es un numero valido");
