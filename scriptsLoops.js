@@ -1,7 +1,19 @@
+/*************************************
+loop for para generar 10 divs html
+**************************************/
+console.log("Inicio del programa")
+var html="";
+for(var i=1; i<=10; i++){
+	html += "\t<div><h1>"+ i +"</h1></div>";
+	}
+document.write(html);
+console.log("programa completado");
+
+
 /*****************************************
 while true hasta q se adivine el numero
 *****************************************/
-function generadorAleatorios(limite){
+/*function generadorAleatorios(limite){
 	return Math.floor(Math.random() * limite) + 1;
 }
 
@@ -11,7 +23,6 @@ while(true)
 {
 	var aleatorio = generadorAleatorios(100);
 	contador++;
-	//var num = parseInt(prompt("ingrese un numero para evaluar"));
 	if (aleatorio == aAdivinar) {
 		break;
 	}
